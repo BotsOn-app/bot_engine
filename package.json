@@ -1,0 +1,25 @@
+{
+	"name": "botson_bot_engine",
+	"version": "0.0.1",
+	"description": "",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"lint": "tsc",
+		"test": "tsc test.ts --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@changesets/cli": "^2.26.1",
+		"tsup": "^6.7.0",
+		"typescript": "^5.0.4"
+	},
+	"dependencies": {
+		"@types/node": "^20.2.5",
+		"discord.js": "^14.11.0"
+	}
+}
